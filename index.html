@@ -1,0 +1,158 @@
+<!-- Registration Form Page (First Entry Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Registration Form Section -->
+  <section id="registration-form">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="degree">Degree (B.Tech/Degree):</label>
+        <input type="text" id="degree" required>
+      </div>
+
+      <div class="form-group">
+        <label for="university">University:</label>
+        <input type="text" id="university" required>
+      </div>
+
+      <div class="form-group">
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+<!-- Main Page (After Registration) -->
+<section id="main-page">
+  <h2>Select a Template</h2>
+  
+  <!-- Template Options Section -->
+  <div class="template-options">
+    <h3>Select Your Resume Template</h3>
+    <div class="template-list">
+      <div class="template" onclick="selectTemplate('template1')">Template 1</div>
+      <div class="template" onclick="selectTemplate('template2')">Template 2</div>
+      <div class="template" onclick="selectTemplate('template3')">Template 3</div>
+      <div class="template" onclick="selectTemplate('template4')">Template 4</div>
+      <div class="template" onclick="selectTemplate('template5')">Template 5</div>
+    </div>
+  </div>
+
+  <!-- Template Preview and Submit -->
+  <div id="templatePreview" class="template-preview">
+    <p>Template Preview will appear here...</p>
+  </div>
+
+  <!-- Print and Edit Options -->
+  <button id="printResumeBtn" onclick="printResume()">Print Resume</button>
+  <button id="editResumeBtn" onclick="editResume()">Edit Resume</button>
+</section>
+<!-- Pop-up after Registration -->
+<div id="templatePopup" class="popup">
+  <div class="popup-content">
+    <h3>Please Select a Template</h3>
+    <div class="popup-templates">
+      <div class="template" onclick="chooseTemplate(1)">Template 1</div>
+      <div class="template" onclick="chooseTemplate(2)">Template 2</div>
+      <div class="template" onclick="chooseTemplate(3)">Template 3</div>
+      <div class="template" onclick="chooseTemplate(4)">Template 4</div>
+      <div class="template" onclick="chooseTemplate(5)">Template 5</div>
+    </div>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+<!-- Menu Bar Section -->
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#personal-info">Personal Info</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Google Companies Scrolling Images -->
+<section id="company-logos">
+  <div class="logos-container">
+    <img src="google1.png" alt="Google 1">
+    <img src="google2.png" alt="Google 2">
+    <img src="google3.png" alt="Google 3">
+    <img src="google4.png" alt="Google 4">
+    <img src="google5.png" alt="Google 5">
+    <img src="google6.png" alt="Google 6">
+    <img src="google7.png" alt="Google 7">
+    <img src="google8.png" alt="Google 8">
+    <img src="google9.png" alt="Google 9">
+    <img src="google10.png" alt="Google 10">
+  </div>
+</section>
+<!-- Free Courses and Jobs Updates Section -->
+<section id="courses-jobs">
+  <h3>Free Courses</h3>
+  <div class="courses-slider">
+    <div class="course">Web Development Free Course</div>
+    <div class="course">Python Programming Free Course</div>
+    <div class="course">JavaScript Basics Free Course</div>
+    <div class="course">Data Science Free Course</div>
+    <div class="course">Machine Learning Free Course</div>
+  </div>
+
+  <h3>Jobs Updates</h3>
+  <div class="jobs-slider">
+    <div class="job">Government Jobs: Apply Now!</div>
+    <div class="job">Private Sector Jobs: Apply Now!</div>
+    <div class="job">Tech Jobs: Apply Now!</div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media-links">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <p>Learning is the only key to success.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
